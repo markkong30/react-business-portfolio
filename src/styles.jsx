@@ -8,6 +8,12 @@ const Layout = styled(motion.div)`
     justify-content: space-between;
     padding: 5rem 10rem;
     color: white;
+
+    @media (max-width: 1000px) {
+        display: block;
+        padding: 2rem 5rem;
+        text-align: center;
+    }
 `
 
 const Description = styled.div`
@@ -16,6 +22,14 @@ const Description = styled.div`
 
     h2 {
         font-weight: lighter;
+    }
+
+    @media (max-width: 1000px) {
+       padding: 0;
+
+       button {
+           margin: 2rem 0rem;
+       }
     }
 `
 
@@ -28,6 +42,13 @@ const Image = styled.div`
         height: 80vh;
         object-fit: cover;
     }
+
+    @media (max-width: 1000px) {
+        img {
+            height: 50vh;
+        }
+    }
+
     
 `
 const Hide = styled.div`

@@ -61,6 +61,14 @@ const Work = styled(motion.div)`
     h2 {
         padding: 1rem 0%;
     }
+
+    @media (max-width: 800px) {
+        padding: 3rem 5rem;
+    }
+
+    @media (max-width: 600px) {
+        padding: 1.5rem 2rem;
+    }
 `
 
 const Movie = styled(motion.div)`
@@ -76,6 +84,12 @@ const Movie = styled(motion.div)`
         width: 100%;
         height: 70vh;
         object-fit: cover;
+    }
+
+    @media (max-width: 700px) {
+        img {
+            height: 50vh;
+        }
     }
 `
 

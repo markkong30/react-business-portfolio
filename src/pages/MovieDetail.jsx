@@ -18,8 +18,6 @@ const MovieDetail = () => {
         console.log(currentMovie)
     }, [movies])
 
-
-
     return (
         <>
             {movie &&
@@ -44,11 +42,11 @@ const MovieDetail = () => {
 
 const Award = ({ title, description }) => {
     return (
-        <AwatdStyle>
+        <AwardStyle>
             <h3>{title}</h3>
             <div className="line"></div>
             <p>{description}</p>
-        </AwatdStyle>
+        </AwardStyle>
     )
 }
 
@@ -81,9 +79,14 @@ const Awards = styled.div`
     margin: 5rem 10rem;
     align-items: center;
     justify-content: space-around;
+
+    @media (max-width: 1150px) {
+        display: block;
+        margin: 2rem;
+    }
 `
 
-const AwatdStyle = styled.div`
+const AwardStyle = styled.div`
     padding: 5rem;
     h3 {
         font-size: 2rem;

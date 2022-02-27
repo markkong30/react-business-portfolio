@@ -60,11 +60,13 @@ const Services = styled(Layout)`
         width: 70%;
         padding: 2rem 0 4rem 0;
     }
+
 `
 
 const Cards = styled.div`
     display: flex;
     flex-wrap: wrap;
+
 `
 
 const Card = styled.div`
@@ -81,6 +83,10 @@ const Card = styled.div`
             padding: 1rem;
             border-radius: 5px;
         }
+        @media (max-width: 1000px) {
+        justify-content: center;
+    }
+
     }
 `
 
